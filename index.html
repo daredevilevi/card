@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive rating component</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="title" content="Interactive rating component" />
+    <meta
+      name="description"
+      content="This is an Interactive rating component made by Aryan"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card" data-card>
+      <div class="rating-state">
+        <div class="card-icon">
+          <img
+            src="./images/icon-star.svg"
+            width="17"
+            height="16"
+            alt="icon star"
+          />
+        </div>
+        <h3 class="card-title">How did we do?</h3>
+        <p class="card-text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <div class="wrapper">
+          <button class="icon-btn" aria-label="rate 1 star" data-rating-btn>
+            1
+          </button>
+          <button class="icon-btn" aria-label="rate 2 star" data-rating-btn>
+            2
+          </button>
+          <button class="icon-btn" aria-label="rate 3 star" data-rating-btn>
+            3
+          </button>
+          <button class="icon-btn" aria-label="rate 4 star" data-rating-btn>
+            4
+          </button>
+          <button class="icon-btn" aria-label="rate 5 star" data-rating-btn>
+            5
+          </button>
+        </div>
+
+        <button class="submit-btn" data-submit-btn>Submit</button>
+      </div>
+
+      <div class="rated-state">
+        <img
+          src="./images/illustration-thank-you.svg"
+          width="162"
+          height="108"
+          alt=""
+          class="card-img"
+        />
+
+        <p class="card-subtitle">
+          You selected <span data-rated-value>5</span> out of 5
+        </p>
+
+        <h3 class="card-title">Thank you!</h3>
+
+        <p class="card-text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
